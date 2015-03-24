@@ -1,0 +1,33 @@
+
+$brand-primary:              #30A4E8;
+$brand-success:              #69C600;
+$brand-info:                 #0053BC;
+$brand-warning:              #FE6800;
+$brand-danger:               #52009B;
+$headings-color:             #414576;
+$text-muted:                 #5A6770;
+
+$state-success-text:         $brand-success;
+$state-info-text:            $brand-info;
+$state-warning-text:         $brand-warning;
+$state-danger-text:          $brand-danger;
+
+$navbar-default-bg:          $brand-primary;
+$navbar-default-color:       #FFF;
+$navbar-default-link-color:  #FFF;
+$navbar-border-radius:       0;
+$jumbotron-padding:          40px;
+$jumbotron-color:            white;
+$font-family-sans-serif:     'Merriweather', serif;
+
+$grid-gutter-width:          30px;
+$container-large-desktop:    (940px + $grid-gutter-width);
+
+
+@import "static_pages";
+
+@import "bootstrap-sprockets";
+@import "bootstrap";
+@import "font-awesome-sprockets";
+@import "font-awesome";
+
