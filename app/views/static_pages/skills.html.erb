@@ -1,0 +1,63 @@
+<div class="row">
+  <div class="jumbotron">
+    <div class="col-md-6 col-md-offset-3 text-center">
+      <h1>Paul Gonzalez</h1>
+      <h2>
+        <small class="jumbotron-subtext">
+          Let's go on a product development journey together
+        </small>
+      </h2>
+    </div>
+  </div>
+</div>
+
+<%= render 'layouts/nav' %>
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-8 col-md-offset-2">
+      <hr>
+      <div class="content-section">
+        <h3>
+          <strong>The technical skills</strong>
+        </h3>
+        <ul class="list-group">
+          <li class="list-group-item">HTML, CSS, Bootstrap, Responsive Design</li>
+          <li class="list-group-item">Sass, LESS</li>
+          <li class="list-group-item">JavaScript, jQuery</li>
+          <li class="list-group-item">Ruby, Ruby on Rails</li>
+          <li class="list-group-item">SQLite, Postgres</li>
+          <li class="list-group-item">TDD, Rspec, MiniTest</li>
+          <li class="list-group-item">Git, GitHub, Heroku</li>
+        </ul>
+        <hr/>
+        <h3>
+          <strong>The softer skills</strong>
+        </h3>
+        <ul class="list-group">
+          <li class="list-group-item">Seeks out user feedback. A communicator first, a developer second.</li>
+          <li class="list-group-item">Obsessed with details, in the context of the big picture.</li>
+          <li class="list-group-item">Comfortable pairing with designers, developers, or product managers.</li>
+          <li class="list-group-item">Sees products all the way through, from sketch to shipping.</li>
+          <li class="list-group-item">Iterates quickly, and loves experimenting with new ideas.</li>
+          <li class="list-group-item">Can roll the sleeves up and sell, both internally and extrenally, if need be.</li>
+          <li class="list-group-item">Loves teaching and helping other team members grow.</li>
+        </ul>
+        <hr/>
+        <h3>
+          <strong>The required docs</strong>
+        </h3>
+        <p>
+          <%= link_to 'https://www.linkedin.com/pub/paul-gonzalez/30/b5/25b', target: '_blank', class: 'social-hover' do %>
+            <%= icon('linkedin', class: 'social-icon') %> View LinkedIn Profile
+          <% end %>
+        </p>
+        <p>
+          <%= link_to 'https://represent.io/paulgonz6', target: '_blank', class: 'social-hover' do %>
+            <%= icon('file-text', class: 'social-icon') %> Download Resume
+          <% end %>
+        </p>
+      </div>
+    </div>
+  </div>
+</div>

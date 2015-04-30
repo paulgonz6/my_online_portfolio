@@ -1,2 +1,74 @@
-<h1>StaticPages#contact</h1>
-<p>Find me in app/views/static_pages/contact.html.erb</p>
+<div class="row">
+  <div class="jumbotron">
+    <div class="col-md-6 col-md-offset-3 text-center">
+      <h1>Paul Gonzalez</h1>
+      <h2>
+        <small class="jumbotron-subtext">
+          Let's go on a product development journey together
+        </small>
+      </h2>
+    </div>
+  </div>
+</div>
+
+<%= render 'layouts/nav' %>
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-8 col-md-offset-2">
+      <hr>
+      <div class="content-section">
+        <h3>
+          <strong>Connect with me</strong>
+        </h3>
+        <p>
+          I am actively looking for full-time job opportunities, so please do not hesitate to reach out if you think I may be a good fit for your company. I have some capacity to take on freelance work, given the right project and client. Most importantly, especially if you are in the Chicago area, just reach out and say hello! I love grabbing coffee and meeting new people.
+        </p>
+        <div class="row">
+          <div class="col-md-6">
+            <ul class="list-unstyled">
+              <li>
+                <%= link_to 'mailto:pjg5005@gmail.com', target: '_blank', class: 'social-hover' do %>
+                <%= icon('envelope', class: 'social-icon') %> pjg5005@gmail.com
+                <% end %>
+              </li>
+
+              <li>
+                <%= link_to 'https://www.twitter.com/paulgonz6', target: '_blank', class: 'social-hover' do %>
+                <%= icon('twitter', class: 'social-icon') %> paulgonz6
+                <% end %>
+              </li>
+              <li>
+                <%= link_to 'https://www.github.com/paulgonz6', target: '_blank', class: 'social-hover' do %>
+                <%= icon('github', class: 'social-icon') %> paulgonz6
+                <% end %>
+              </li>
+              <li>
+                <%= link_to 'https://www.medium.com/paulgonz6', target: '_blank', class: 'social-hover' do %>
+                <%= icon('medium', class: 'social-icon') %> paulgonz6
+                <% end %>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-6">
+            <ul class="list-unstyled">
+              <li>
+                <%= icon('phone', class: 'social-icon') %> (201) 523-1293
+              </li>
+              <li>
+                <%= link_to 'https://www.facebook.com/paul.gonzalez.37604', target: '_blank', class: 'social-hover' do %>
+                <%= icon('facebook', class: 'social-icon') %> Paul Gonzalez
+                <% end %>
+              </li>
+              <li>
+                <%= link_to 'https://www.instagram.com/paulgonz6', target: '_blank', class: 'social-hover' do %>
+                <%= icon('instagram', class: 'social-icon') %> paulgonz6
+                <% end %>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

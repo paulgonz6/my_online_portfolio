@@ -27,8 +27,10 @@ $jumbotron-padding:          40px;
 $jumbotron-color:            white;
 $font-family-sans-serif:     'Merriweather', serif;
 
+$link-color:                 $text-color;
+
 $grid-gutter-width:          30px;
-$container-large-desktop:    (940px + $grid-gutter-width);
+$container-large-desktop:    (960px + $grid-gutter-width);
 
 
 @import "static_pages";
