@@ -13,4 +13,8 @@ class StaticPagesController < ApplicationController
 
   def skills
   end
+
+  def blog
+  end
+
 end

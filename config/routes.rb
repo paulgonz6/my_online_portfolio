@@ -16,5 +16,14 @@ Rails.application.routes.draw do
   get '/contact',         :controller => 'static_pages',
                           :action => 'contact',
                           :as => 'contact'
+
+  get '/blog',            :controller => 'static_pages',
+                          :action => 'blog',
+                          :as => 'blog'
+
+  get '/jellyvision',     :controller => 'jellyvisions',
+                          :action => 'welcome',
+                          :as => 'welcome'
+
 end
 

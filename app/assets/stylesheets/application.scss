@@ -1,5 +1,5 @@
 
-$brand-primary:              #30A4E8;
+$brand-primary:              #0087C9;
 $brand-success:              #69C600;
 $brand-info:                 #0053BC;
 $brand-warning:              #FE6800;
@@ -25,7 +25,7 @@ $navbar-default-link-color:  #FFF;
 $navbar-border-radius:       0;
 $jumbotron-padding:          40px;
 $jumbotron-color:            white;
-$font-family-sans-serif:     'Merriweather', serif;
+$font-family:                'Open Sans', sans-serif;
 
 $link-color:                 $text-color;
 
@@ -33,9 +33,12 @@ $grid-gutter-width:          30px;
 $container-large-desktop:    (960px + $grid-gutter-width);
 
 
-@import "static_pages";
+
 @import "bootstrap-sprockets";
 @import "bootstrap";
 @import "font-awesome-sprockets";
 @import "font-awesome";
+@import "static_pages";
+@import "jellyvision";
+@import "animate";
 

@@ -2,20 +2,32 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-.jumbotron {
-  width: 100%;
-  background-size: cover;
-  background-position: center;
-  background-image: url(<%= asset_path('street.jpg') %>);
-  border-bottom: 5px solid $brand-primary;
-  margin-bottom: 0px !important;
-  padding: 40px !important;
+body {
+  font-family: $font-family;
 }
 
 
+.jumbotron {
+  width: 100%;
+  background-color: $brand-primary;
+  margin-bottom: 0px !important;
+  padding: 40px !important;
+
+  h1 {
+    font-size: 48px;
+    color: white;
+  }
+}
+
 .jumbotron-subtext {
-  color: white;
+  color: black;
   margin: 0;
+}
+
+.nav {
+  li {
+    color: darken($brand-primary, 40%);
+  }
 }
 
 .nav-row {
@@ -96,6 +108,10 @@
 .social-hover:hover {
   color: $brand-primary !important;
   text-decoration: none !important;
+}
+
+.lg-padding {
+  padding: 25px 0;
 }
 
 
