@@ -2,16 +2,37 @@
   padding: 50px;
   background-color: #267EDC;
 
+  h1 {
+    font-size: 92px;
+    font-weight: 800;
+  }
+
   h2 {
     color: white;
     font-size: 28px;
-    font-weight: 300;
+    font-weight: 400;
   }
 
   h4 {
     color: white;
     font-size: 18px;
     font-weight: 200;
+    line-height: 30px;
   }
 
+}
+
+.jelly-button {
+  background-color: #FF9300;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 31px;
+  margin-top: 15px;
+}
+
+.jelly-content {
+  h3 {
+   color: #023F64;
+   font-weight: 700;
+  }
 }
