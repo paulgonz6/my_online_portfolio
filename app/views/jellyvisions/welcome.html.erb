@@ -1,51 +1,185 @@
 <div class="jumbotron jelly-jumbo">
+  <div>
+    <p class="hiring-call-out">
+      <strong>Yea, we need to hire this guy now!</strong>
+      <a href="mailto:pjg5005@gmail.com?subject=Dude, awesome site. Let's grab coffee?">
+        Email me
+      </a>
+    </p>
+  </div>
   <div class="container">
-    
-    <div class="row">
-      <div class="col-md-6">
-        <h1>
-          paul
-        </h1>
-        <h2>
-          Product developer and designer ready to help your team be more awesome
-        </h2>
+    <div class="tutorial-content" id="step_one">
+      <div class="row">
+        <div class="col-md-6 col-md-offset-1">
+          <h1>
+            paul
+          </h1>
+          <h2>
+            Product developer and designer. Let's build awesome stuff together.
+          </h2>
+        </div>
       </div>
-    </div>
-    <div class="row">
-      <div class="col-md-6">
-        <h4>
-          Hi, I'm Paul. Unlike ALEX, I'm actually a real human (sorry, I know robots are pretty cool). But just like ALEX, I'm here to help you out. Help you out in hiring your next Jr Developer or Modern UI Engineer.
-        </h4>
-        <h4>
+      <div class="row">
+        <div class="col-md-6 col-md-offset-1">
+          <h4>
+            Hi, I'm Paul. Unlike ALEX, I'm actually a real human (sorry, I know robots are pretty cool). But just like ALEX, I'm here to help you out. Help you out in hiring your next Jr Developer or Modern UI Engineer.
+          </h4>
+          <!--         <h4>
           Enrolling for insurance or 401k plans can be as boring as going through stacks of cover letters and resumes. Instead of the boring conventional way, I have put together a quick interactive tour of myself instead! You're welcome.
-        </h4>
+        </h4> -->
         <h4>
           This tour is quick. You'll get to know me in about 3 minutes and 26 seconds. So grab a beer, or a coffee, or a glass of warm milk, and have fun. That's what life is all about anyway. Bottoms Up.
         </h4>
       </div>
 
-      <div class="col-md-4 col-md-offset-2">
-        <button class="btn btn-lg jelly-button">
+      <div class="col-md-4 col-md-offset-1">
+        <%= link_to step_one_url, remote: true do %>
+        <button class="btn btn-lg jelly-button animated infinite pulse">
           Meet PAUL <%= icon('chevron-right') %>
         </button>
+        <% end %>
       </div>
-
+    </div>
     </div>
 
+    <div class="tutorial-content" id="step_two">
+      <div class="row question">
+        <div class="col-md-10 col-md-offset-1 text-center">
+          <h2>
+            I'm flattered that you want to get to know me.
+            But first, can I get to know you real quick? What is your name?
+          </h2>
+        </div>
+      </div>
+      <div class="row">
+
+        <%= link_to amanda_lannert_url, remote: true do %>
+        <div class="col-md-3">
+          <div class="card-selector">
+            <p class="letter-choice">A</p>
+            <p>Amanda Lannert</p>
+          </div>
+        </div>
+        <% end %>
+
+        <div class="col-md-3">
+          <div class="card-selector">
+            <p class="letter-choice">B</p>
+            <p>Dan Rumney</p>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card-selector">
+            <p class="letter-choice">C</p>
+            <p>Emily Owaki</p>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card-selector" id="someone_else">
+            <p class="letter-choice">D</p>
+            <p>Someone else</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="tutorial-content" id="amanda_lannert">
+      <div class="row question">
+        <div class="col-md-12 text-center">
+          <h2>
+            Hey there, Amanda! Thanks again for the intro to Dan and for spending time with us at Starter School.
+          </h2>
+          <h2>
+            Out of curiousty, where are you right now?
+          </h2>
+
+          <div class="row answer-choices">
+
+            <div class="col-md-3">
+              <div class="card-selector">
+                <p class="letter-choice">A</p>
+                <p>At my office</p>
+              </div>
+            </div>
+
+
+
+            <div class="col-md-3">
+              <div class="card-selector">
+                <p class="letter-choice">B</p>
+                <p>On the train</p>
+              </div>
+            </div>
+
+
+
+            <div class="col-md-3">
+              <div class="card-selector">
+                <p class="letter-choice">C</p>
+                <p>In an Uber</p>
+              </div>
+            </div>
+
+
+
+            <div class="col-md-3">
+              <div class="card-selector" id="someone_else">
+                <p class="letter-choice">D</p>
+                <p>Remote Island</p>
+              </div>
+            </div>
+
+          </div>
+
+          <p>P.S. You were my favorite speaker. Shhh! Don't tell Jason.</p>
+        </div>
+      </div>
+    </div>
   </div>
 </div>
 
 <div class="container">
   <br>
-  <div class="row jelly-content text-center">
-    <h3>
-      See what others are saying about PAUL!
-    </h3>
-    <div class="col-md-6">
+  <div class="row jelly-content">
+    <div class="col-md-10 col-md-offset-1">
+      <h3>
+        See what others are saying about me!
+      </h3>
+    </div>
+  </div>
+  <div class="row jelly-content">
+    <div class="col-md-10 col-md-offset-1">
+      <h3>
+        I think you'll find my experience interesting too
+      </h3>
+
+      <h4><strong>Teaching Assistant at Northwestern (March 2015 - Present)</strong></h4>
+      <p>
+        For the past few months I have been a teaching assistant for Northwestern's Startup Programming & Management course. I basically help the students learn the magic of Ruby on Rails and assistant them in building their ideas into apps.
+      </p>
+
+      <br>
+      <h4><strong>Starter School (September 2014 - Present)</strong></h4>
+      <p>
+        Holy shit was this a crazy experience. In less than 9 months, I went from no product experience at all to launching my first app. In that time I learned HTML/CSS, front-end frameworks like jQuery and Bootstrap, Ruby, Ruby on Rails, and even the version control system Git and GitHub. Not to mention all the product development knowledge required to actually launch an app and get users.
+      </p>
+
+      <br>
+      <h4><strong>Other Professional Experiences (Always ongoing)</strong></h4>
+      <p>
+        As an avid sports fan, and lover of most tech related meetups, I was shocked to find out there was no Chicago Sports-Tech Meetup. So I started one. Our group is now 275+ members strong, and is a great place for people to share ideas in the community
+      </p>
+      <p>
+        Before learning product development at Starter School, I spent my professional hours in finance. I studied Finance and Economics at Penn State University, and join Goldman Sachs right out of schools. In six years I held multiple roles including Derivative Trade Support, Investment Banking Analyst, and Financial Investment Professional. I don't mind nerding out over some finance topics, so if you're ever intersted about these, just ask me!
+      </p>
+    </div>
+  </div>
+  <div class="row jelly-content">
+    <div class="col-md-10 col-md-offset-1">
+      <h3>
+        When I'm not building great products, I do some other fun stuff
+      </h3>
     </div>
   </div>
 </div>
 
-<script type="text/javascript">
-  
-</script>

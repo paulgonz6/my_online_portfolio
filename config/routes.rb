@@ -25,5 +25,13 @@ Rails.application.routes.draw do
                           :action => 'welcome',
                           :as => 'welcome'
 
+  get '/tutorial_step_one',   :controller => 'jellyvisions',
+                              :action => 'step_one',
+                              :as => 'step_one'
+
+  get '/amanda_lannert',      :controller => 'jellyvisions',
+                              :action => 'amanda_lannert',
+                              :as => 'amanda_lannert'
+
 end
 

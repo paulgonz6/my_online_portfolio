@@ -1,10 +1,24 @@
 .jelly-jumbo {
-  padding: 50px;
+  padding: 20px;
   background-color: #267EDC;
+  height: 600px;
+  position: relative;
+
+  .hiring-call-out {
+    background-color: $jelly-dark-blue;
+    position: fixed;
+    top: 0;
+    right: 0;
+    padding: 15px;
+    font-size: 14px;
+    font-weight: 200;
+    letter-spacing: 1px;
+  }
 
   h1 {
     font-size: 92px;
     font-weight: 800;
+    margin-top: 0;
   }
 
   h2 {
@@ -22,12 +36,21 @@
 
 }
 
+.tutorial-content {
+  display: none;
+}
+
+#step_one {
+  display: block;
+}
+
 .jelly-button {
   background-color: #FF9300;
   font-weight: 700;
   font-size: 24px;
   line-height: 31px;
   margin-top: 15px;
+  animation-delay: 5s;
 }
 
 .jelly-content {
@@ -35,4 +58,44 @@
    color: #023F64;
    font-weight: 700;
   }
+}
+
+.question {
+  margin: 40px 0 60px 0;
+}
+
+.answer-choices {
+  margin-top: 50px;
+}
+
+.card-selector {
+  padding: 46px 40px 40px 40px;
+  position: relative;
+  text-align: center;
+  border-radius: 4px;
+  background-color: $jelly-yellow;
+  color: black;
+  border-bottom: 4px solid darken($jelly-yellow, 20%);
+
+  p {
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+}
+
+.letter-choice {
+  font-size: 16px !important;
+  font-weight: 500 !important;
+  padding: 6px 20px !important;
+  color: white;
+  position: absolute;
+  border-radius: 4px;
+  top: -12px;
+  left: 38%;
+  background-color: $jelly-red;
+}
+
+.card-selector:hover {
+  cursor: pointer;
+  transform: translateY(-3px);
 }
