@@ -33,5 +33,25 @@ Rails.application.routes.draw do
                               :action => 'amanda_lannert',
                               :as => 'amanda_lannert'
 
+  get '/office',              :controller => 'jellyvisions',
+                              :action => 'office',
+                              :as => 'office'
+
+  get '/reason_one',          :controller => 'jellyvisions',
+                              :action => 'reason_one',
+                              :as => 'reason_one'
+
+  get '/reason_two',          :controller => 'jellyvisions',
+                              :action => 'reason_two',
+                              :as => 'reason_two'
+
+  get '/reason_three',        :controller => 'jellyvisions',
+                              :action => 'reason_three',
+                              :as => 'reason_three'
+
+  get '/final_message',       :controller => 'jellyvisions',
+                              :action => 'final_message',
+                              :as => 'final_message'
+
 end
 

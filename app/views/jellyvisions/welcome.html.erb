@@ -1,46 +1,8 @@
 <div class="jumbotron jelly-jumbo">
-  <div>
-    <p class="hiring-call-out">
-      <strong>Yea, we need to hire this guy now!</strong>
-      <a href="mailto:pjg5005@gmail.com?subject=Dude, awesome site. Let's grab coffee?">
-        Email me
-      </a>
-    </p>
-  </div>
-  <div class="container">
-    <div class="tutorial-content" id="step_one">
-      <div class="row">
-        <div class="col-md-6 col-md-offset-1">
-          <h1>
-            paul
-          </h1>
-          <h2>
-            Product developer and designer. Let's build awesome stuff together.
-          </h2>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-md-6 col-md-offset-1">
-          <h4>
-            Hi, I'm Paul. Unlike ALEX, I'm actually a real human (sorry, I know robots are pretty cool). But just like ALEX, I'm here to help you out. Help you out in hiring your next Jr Developer or Modern UI Engineer.
-          </h4>
-          <!--         <h4>
-          Enrolling for insurance or 401k plans can be as boring as going through stacks of cover letters and resumes. Instead of the boring conventional way, I have put together a quick interactive tour of myself instead! You're welcome.
-        </h4> -->
-        <h4>
-          This tour is quick. You'll get to know me in about 3 minutes and 26 seconds. So grab a beer, or a coffee, or a glass of warm milk, and have fun. That's what life is all about anyway. Bottoms Up.
-        </h4>
-      </div>
+  <%= render 'hiring_call_out' %>
 
-      <div class="col-md-4 col-md-offset-1">
-        <%= link_to step_one_url, remote: true do %>
-        <button class="btn btn-lg jelly-button animated infinite pulse">
-          Meet PAUL <%= icon('chevron-right') %>
-        </button>
-        <% end %>
-      </div>
-    </div>
-    </div>
+  <div class="container">
+    <%= render 'step_one_welcome' %>
 
     <div class="tutorial-content" id="step_two">
       <div class="row question">
@@ -52,7 +14,6 @@
         </div>
       </div>
       <div class="row">
-
         <%= link_to amanda_lannert_url, remote: true do %>
         <div class="col-md-3">
           <div class="card-selector">
@@ -61,7 +22,6 @@
           </div>
         </div>
         <% end %>
-
         <div class="col-md-3">
           <div class="card-selector">
             <p class="letter-choice">B</p>
@@ -95,13 +55,14 @@
 
           <div class="row answer-choices">
 
+            <%= link_to office_url, remote: true do %>
             <div class="col-md-3">
               <div class="card-selector">
                 <p class="letter-choice">A</p>
                 <p>At my office</p>
               </div>
             </div>
-
+            <% end %>
 
 
             <div class="col-md-3">
@@ -128,58 +89,108 @@
                 <p>Remote Island</p>
               </div>
             </div>
-
           </div>
 
-          <p>P.S. You were my favorite speaker. Shhh! Don't tell Jason.</p>
+          <p><small>P.S. You were my favorite speaker. Shhh! Don't tell Jason.</small></p>
         </div>
       </div>
     </div>
+
+    <div class="tutorial-content" id="office">
+      <div class="row question">
+        <br>
+        <br>
+        <br>
+        <div class="col-md-6 col-md-offset-1">
+          <h4>
+            Great, if the Hawks are on tonight, stop by Sully's after work. You’ll probably see me there.
+          </h4>
+          <h4>
+            Anyway, back to business. Aside from being a generally fun person (at least that’s what my friends tell me), I think there a few others reason why I think I'd be a good fit at Jellyvision. In fact, I have 3 reasons.
+          </h4>
+
+          <br>
+
+          <%= link_to reason_one_url, remote: true do %>
+            <button class="btn jelly-button jelly-button-reg-text">
+              I'm intrigued, let me hear 'em <%= icon('arrow-right') %>
+            </button>
+          <% end %>
+        </div>
+      </div>
+    </div>
+
+    <div class="tutorial-content" id="reason_one">
+      <div class="row question">
+        <br>
+        <br>
+        <br>
+        <div class="col-md-6 col-md-offset-1">
+          <h2>Reason 1: I'm a tinkerer</h2>
+          <h4>
+            I like to poke holes in things and see what happens. I like to explore new ideas and thoughts. I like to go down rabbit holes and see what I find. Don’t get me wrong, I know how to get shit done. But for me, experimentation is part of that process.
+          </h4>
+
+          <br>
+
+          <%= link_to reason_two_url, remote: true do %>
+            <button class="btn jelly-button jelly-button-reg-text">
+              Go on... <%= icon('arrow-right') %>
+            </button>
+          <% end %>
+        </div>
+      </div>
+    </div>
+
+    <div class="tutorial-content" id="reason_two">
+      <div class="row question">
+        <br>
+        <br>
+        <br>
+        <div class="col-md-6 col-md-offset-1">
+          <h2>Reason 2: I'm like a tuatara</h2>
+          <h4>
+            <em>WTF is a tuatara?</em>
+          </h4>
+          <h4>
+            Well, the tuatara is actually a ‘living dinosaur.’ It is widely accepted that the tuatara is the fastest evolving creature in history. That is to say, it learns quickly and adapts. In one years time, I have a learned a lot. What I lack in “years of experience” I make up for in a proof of progress.
+          </h4>
+
+          <br>
+
+          <%= link_to reason_three_url, remote: true do %>
+            <button class="btn jelly-button jelly-button-reg-text">
+              Ok I'm hooked, let's see #3 <%= icon('arrow-right') %>
+            </button>
+          <% end %>
+        </div>
+      </div>
+    </div>
+
+    <div class="tutorial-content" id="reason_three">
+      <div class="row question">
+        <br>
+        <br>
+        <br>
+        <div class="col-md-6 col-md-offset-1">
+          <h2>Reason 3: I love teaching</h2>
+          <h4>
+            Whether it’s pairing with someone else, or lecturing in a formal setting, I love sharing knowledge. If I can help someone get unstuck, that is a good day for me. A good student tends to have zero ego. Those are the types of people I like to work with.
+          </h4>
+
+          <br>
+
+          <%= link_to final_message_url, remote: true do %>
+            <button class="btn jelly-button jelly-button-reg-text">
+              One last thing... <%= icon('arrow-right') %>
+            </button>
+          <% end %>
+        </div>
+      </div>
+    </div>
+
+
   </div>
 </div>
 
-<div class="container">
-  <br>
-  <div class="row jelly-content">
-    <div class="col-md-10 col-md-offset-1">
-      <h3>
-        See what others are saying about me!
-      </h3>
-    </div>
-  </div>
-  <div class="row jelly-content">
-    <div class="col-md-10 col-md-offset-1">
-      <h3>
-        I think you'll find my experience interesting too
-      </h3>
-
-      <h4><strong>Teaching Assistant at Northwestern (March 2015 - Present)</strong></h4>
-      <p>
-        For the past few months I have been a teaching assistant for Northwestern's Startup Programming & Management course. I basically help the students learn the magic of Ruby on Rails and assistant them in building their ideas into apps.
-      </p>
-
-      <br>
-      <h4><strong>Starter School (September 2014 - Present)</strong></h4>
-      <p>
-        Holy shit was this a crazy experience. In less than 9 months, I went from no product experience at all to launching my first app. In that time I learned HTML/CSS, front-end frameworks like jQuery and Bootstrap, Ruby, Ruby on Rails, and even the version control system Git and GitHub. Not to mention all the product development knowledge required to actually launch an app and get users.
-      </p>
-
-      <br>
-      <h4><strong>Other Professional Experiences (Always ongoing)</strong></h4>
-      <p>
-        As an avid sports fan, and lover of most tech related meetups, I was shocked to find out there was no Chicago Sports-Tech Meetup. So I started one. Our group is now 275+ members strong, and is a great place for people to share ideas in the community
-      </p>
-      <p>
-        Before learning product development at Starter School, I spent my professional hours in finance. I studied Finance and Economics at Penn State University, and join Goldman Sachs right out of schools. In six years I held multiple roles including Derivative Trade Support, Investment Banking Analyst, and Financial Investment Professional. I don't mind nerding out over some finance topics, so if you're ever intersted about these, just ask me!
-      </p>
-    </div>
-  </div>
-  <div class="row jelly-content">
-    <div class="col-md-10 col-md-offset-1">
-      <h3>
-        When I'm not building great products, I do some other fun stuff
-      </h3>
-    </div>
-  </div>
-</div>
-
+<%= render 'static_content' %>

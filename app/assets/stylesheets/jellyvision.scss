@@ -54,10 +54,22 @@
 }
 
 .jelly-content {
+  color: black;
+
   h3 {
    color: #023F64;
    font-weight: 700;
   }
+
+}
+
+.jelly-yellow {
+  color: $jelly-yellow;
+}
+
+.jelly-button-reg-text {
+  font-weight: 400;
+  font-size: 18px;
 }
 
 .question {
