@@ -1,0 +1,39 @@
+<div class="row answer-choices locations">
+
+  <%= link_to location_office_url, remote: true do %>
+  <div class="col-md-3">
+    <div class="card-selector">
+      <p class="letter-choice">A</p>
+      <p>At the office</p>
+    </div>
+  </div>
+  <% end %>
+
+  <%= link_to location_train_url, remote: true do %>
+  <div class="col-md-3">
+    <div class="card-selector">
+      <p class="letter-choice">B</p>
+      <p>On the train</p>
+    </div>
+  </div>
+  <% end %>
+
+  <%= link_to location_uber_url, remote: true do %>
+  <div class="col-md-3">
+    <div class="card-selector">
+      <p class="letter-choice">C</p>
+      <p>In an Uber</p>
+    </div>
+  </div>
+  <% end %>
+
+  <%= link_to location_remote_island_url, remote: true do %>
+  <div class="col-md-3">
+    <div class="card-selector" id="someone_else">
+      <p class="letter-choice">D</p>
+      <p>Remote Island</p>
+    </div>
+  </div>
+  <% end %>
+
+</div>

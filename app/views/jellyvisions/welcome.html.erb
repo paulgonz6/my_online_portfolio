@@ -4,193 +4,24 @@
   <div class="container">
     <%= render 'step_one_welcome' %>
 
-    <div class="tutorial-content" id="step_two">
-      <div class="row question">
-        <div class="col-md-10 col-md-offset-1 text-center">
-          <h2>
-            I'm flattered that you want to get to know me.
-            But first, can I get to know you real quick? What is your name?
-          </h2>
-        </div>
-      </div>
-      <div class="row">
-        <%= link_to amanda_lannert_url, remote: true do %>
-        <div class="col-md-3">
-          <div class="card-selector">
-            <p class="letter-choice">A</p>
-            <p>Amanda Lannert</p>
-          </div>
-        </div>
-        <% end %>
-        <div class="col-md-3">
-          <div class="card-selector">
-            <p class="letter-choice">B</p>
-            <p>Dan Rumney</p>
-          </div>
-        </div>
-        <div class="col-md-3">
-          <div class="card-selector">
-            <p class="letter-choice">C</p>
-            <p>Emily Owaki</p>
-          </div>
-        </div>
-        <div class="col-md-3">
-          <div class="card-selector" id="someone_else">
-            <p class="letter-choice">D</p>
-            <p>Someone else</p>
-          </div>
-        </div>
-      </div>
-    </div>
+    <%= render 'step_two' %>
 
-    <div class="tutorial-content" id="amanda_lannert">
-      <div class="row question">
-        <div class="col-md-12 text-center">
-          <h2>
-            Hey there, Amanda! Thanks again for the intro to Dan and for spending time with us at Starter School.
-          </h2>
-          <h2>
-            Out of curiousty, where are you right now?
-          </h2>
+    <%= render 'person_al' %>
+    <%= render 'person_mj' %>
+    <%= render 'person_dr' %>
+    <%= render 'person_other' %>
 
-          <div class="row answer-choices">
+    <%= render 'location_office' %>
+    <%= render 'location_train' %>
+    <%= render 'location_uber' %>
+    <%= render 'location_remote_island' %>
 
-            <%= link_to office_url, remote: true do %>
-            <div class="col-md-3">
-              <div class="card-selector">
-                <p class="letter-choice">A</p>
-                <p>At my office</p>
-              </div>
-            </div>
-            <% end %>
-
-
-            <div class="col-md-3">
-              <div class="card-selector">
-                <p class="letter-choice">B</p>
-                <p>On the train</p>
-              </div>
-            </div>
-
-
-
-            <div class="col-md-3">
-              <div class="card-selector">
-                <p class="letter-choice">C</p>
-                <p>In an Uber</p>
-              </div>
-            </div>
-
-
-
-            <div class="col-md-3">
-              <div class="card-selector" id="someone_else">
-                <p class="letter-choice">D</p>
-                <p>Remote Island</p>
-              </div>
-            </div>
-          </div>
-
-          <p><small>P.S. You were my favorite speaker. Shhh! Don't tell Jason.</small></p>
-        </div>
-      </div>
-    </div>
-
-    <div class="tutorial-content" id="office">
-      <div class="row question">
-        <br>
-        <br>
-        <br>
-        <div class="col-md-6 col-md-offset-1">
-          <h4>
-            Great, if the Hawks are on tonight, stop by Sully's after work. You’ll probably see me there.
-          </h4>
-          <h4>
-            Anyway, back to business. Aside from being a generally fun person (at least that’s what my friends tell me), I think there a few others reason why I think I'd be a good fit at Jellyvision. In fact, I have 3 reasons.
-          </h4>
-
-          <br>
-
-          <%= link_to reason_one_url, remote: true do %>
-            <button class="btn jelly-button jelly-button-reg-text">
-              I'm intrigued, let me hear 'em <%= icon('arrow-right') %>
-            </button>
-          <% end %>
-        </div>
-      </div>
-    </div>
-
-    <div class="tutorial-content" id="reason_one">
-      <div class="row question">
-        <br>
-        <br>
-        <br>
-        <div class="col-md-6 col-md-offset-1">
-          <h2>Reason 1: I'm a tinkerer</h2>
-          <h4>
-            I like to poke holes in things and see what happens. I like to explore new ideas and thoughts. I like to go down rabbit holes and see what I find. Don’t get me wrong, I know how to get shit done. But for me, experimentation is part of that process.
-          </h4>
-
-          <br>
-
-          <%= link_to reason_two_url, remote: true do %>
-            <button class="btn jelly-button jelly-button-reg-text">
-              Go on... <%= icon('arrow-right') %>
-            </button>
-          <% end %>
-        </div>
-      </div>
-    </div>
-
-    <div class="tutorial-content" id="reason_two">
-      <div class="row question">
-        <br>
-        <br>
-        <br>
-        <div class="col-md-6 col-md-offset-1">
-          <h2>Reason 2: I'm like a tuatara</h2>
-          <h4>
-            <em>WTF is a tuatara?</em>
-          </h4>
-          <h4>
-            Well, the tuatara is actually a ‘living dinosaur.’ It is widely accepted that the tuatara is the fastest evolving creature in history. That is to say, it learns quickly and adapts. In one years time, I have a learned a lot. What I lack in “years of experience” I make up for in a proof of progress.
-          </h4>
-
-          <br>
-
-          <%= link_to reason_three_url, remote: true do %>
-            <button class="btn jelly-button jelly-button-reg-text">
-              Ok I'm hooked, let's see #3 <%= icon('arrow-right') %>
-            </button>
-          <% end %>
-        </div>
-      </div>
-    </div>
-
-    <div class="tutorial-content" id="reason_three">
-      <div class="row question">
-        <br>
-        <br>
-        <br>
-        <div class="col-md-6 col-md-offset-1">
-          <h2>Reason 3: I love teaching</h2>
-          <h4>
-            Whether it’s pairing with someone else, or lecturing in a formal setting, I love sharing knowledge. If I can help someone get unstuck, that is a good day for me. A good student tends to have zero ego. Those are the types of people I like to work with.
-          </h4>
-
-          <br>
-
-          <%= link_to final_message_url, remote: true do %>
-            <button class="btn jelly-button jelly-button-reg-text">
-              One last thing... <%= icon('arrow-right') %>
-            </button>
-          <% end %>
-        </div>
-      </div>
-    </div>
-
-
+    <%= render 'reason_one' %>
+    <%= render 'reason_two' %>
+    <%= render 'reason_three' %>
+    <%= render 'final_message' %>
   </div>
+
 </div>
 
 <%= render 'static_content' %>

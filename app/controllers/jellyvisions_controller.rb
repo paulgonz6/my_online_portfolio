@@ -10,18 +10,57 @@ class JellyvisionsController < ApplicationController
     end
   end
 
+# PEOPLE ===========
   def amanda_lannert
     respond_to do |format|
       format.js
     end
   end
 
-  def office
+  def dan_rumney
     respond_to do |format|
       format.js
     end
   end
 
+  def michael_jarecki
+    respond_to do |format|
+      format.js
+    end
+  end
+
+  def person_other
+    respond_to do |format|
+      format.js
+    end
+  end
+
+# LOCATIONS ============
+  def location_office
+    respond_to do |format|
+      format.js
+    end
+  end
+
+  def location_train
+    respond_to do |format|
+      format.js
+    end
+  end
+
+  def location_uber
+    respond_to do |format|
+      format.js
+    end
+  end
+
+  def location_remote_island
+    respond_to do |format|
+      format.js
+    end
+  end
+
+# REASONS ===============
   def reason_one
     respond_to do |format|
       format.js

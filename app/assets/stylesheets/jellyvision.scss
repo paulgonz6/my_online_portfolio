@@ -1,7 +1,7 @@
 .jelly-jumbo {
-  padding: 20px;
+  padding-top: 20px;
   background-color: #267EDC;
-  height: 600px;
+  min-height: 600px;
   position: relative;
 
   .hiring-call-out {
@@ -73,11 +73,15 @@
 }
 
 .question {
-  margin: 40px 0 60px 0;
+  margin-top: 40px;
 }
 
 .answer-choices {
   margin-top: 50px;
+}
+
+.cards {
+  margin-top: 25px;
 }
 
 .card-selector {
@@ -110,4 +114,12 @@
 .card-selector:hover {
   cursor: pointer;
   transform: translateY(-3px);
+}
+
+.opaque {
+  opacity: .5;
+}
+
+.no-margin-bottom {
+  margin-bottom: 0;
 }

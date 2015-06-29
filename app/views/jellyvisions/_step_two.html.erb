@@ -1,0 +1,49 @@
+<div class="tutorial-content" id="step_two">
+  <div class="row question">
+    <div class="col-md-10 col-md-offset-1 text-center">
+      <h2>
+        I'm flattered that you want to get to know me.
+        But first, can I get to know you real quick? What is your name?
+      </h2>
+    </div>
+  </div>
+
+  <div class="row cards">
+
+    <%= link_to amanda_lannert_url, remote: true do %>
+      <div class="col-md-3">
+        <div class="card-selector">
+          <p class="letter-choice">A</p>
+          <p>Amanda Lannert</p>
+        </div>
+      </div>
+    <% end %>
+
+    <%= link_to michael_jarecki_url, remote: true do %>
+      <div class="col-md-3">
+        <div class="card-selector">
+          <p class="letter-choice">B</p>
+          <p>Michael Jarecki</p>
+        </div>
+      </div>
+    <% end %>
+
+    <%= link_to dan_rumney_url, remote: true do %>
+      <div class="col-md-3">
+        <div class="card-selector">
+          <p class="letter-choice">C</p>
+          <p>Dan Rumney</p>
+        </div>
+      </div>
+    <% end %>
+
+    <%= link_to person_other_url, remote: true do %>
+      <div class="col-md-3">
+        <div class="card-selector" id="someone_else">
+          <p class="letter-choice">D</p>
+          <p>Someone else</p>
+        </div>
+      </div>
+    <% end %>
+  </div>
+</div>
